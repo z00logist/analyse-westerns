@@ -29,7 +29,7 @@ console = Console()
 app = typer.Typer(add_completion=False)
 
 DATABASE_URL = os.getenv(
-    "DATABASE_URL", "postgresql://demo_user:demo_pass@localhost:5433/demo_db"
+    "DATABASE_URL", "postgresql://demo_user:demo_pass@localhost:5432/demo_db"
 )
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 if not TMDB_API_KEY:
